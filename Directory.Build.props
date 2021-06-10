@@ -1,0 +1,5 @@
+<Project>
+    <Target Name="SpecialTarget" BeforeTargets="CollectPackageReferences" >
+            <Warning Text=" Special target was run at $([System.DateTime]::Now.ToString(`yyyy.dd.mm.ss`))"/>
+    </Target>
+</Project>
